@@ -6,7 +6,7 @@ var _ = require('lodash');
 var generarUsuario = function(){
   var randomId=faker.random.uuid();
   var randomName = faker.name.findName();
-  var randomContent=faker.lorem.words();
+  var randomContent=faker.lorem.sentence();
   var randomDate = faker.date.past();
   var randomImage = faker.image.people();
   return {
@@ -14,7 +14,7 @@ var generarUsuario = function(){
     nombre: randomName,
     contenido: randomContent,
     fecha: randomDate,
-    imagen: randomImage,
+    imagen: randomImage
   }
 
 }
